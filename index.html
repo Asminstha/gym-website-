@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmin Gym House</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    /* CSS Reset */
+    body {
+        color: rgb(121, 3, 255);
+        margin: 0px;
+        padding: 0px;
+        background: url('Img/bg4.jpg');
+        /* filter: invert(100%); */
+        /* height: 1500px; */
+    }
+
+    .left {
+        position: absolute;
+        top: 4px;
+        left: 13px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+    .left img{  /*logo*/
+        width: 124px;
+        height: 90px;
+filter: invert(100%); /*turn black photo into white and vice versa*/
+    }
+    .left div{
+        line-height: 15px;
+        font-size: 15px;
+text-align: center;
+
+    }
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 1px auto;
+        /* border: 2px solid rgb(8, 146, 238); */
+    }
+
+    .right {
+        position: absolute;
+        top: 20px;
+        right: 34px;
+        display: inline-block;
+        /* It Takes only its space  */
+        /* border: 2px solid rgb(110, 11, 202); */
+        /* background-color: rgb(243, 217, 217); */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{  /* It shows the property on li tag*/
+        font-size: 25px;
+        display:inline-block;
+    }
+    .navbar li a{ 
+        color:rgb(241, 8, 8);
+        text-decoration: none;
+        padding: 15px 15px;
+    }
+    .navbar li a:hover, .navbar li a.active{ /* Shows property on active page / hover effect*/
+       text-decoration: underline;
+       color: blueviolet;
+    }
+    .btn{
+        margin: 0px 9px; /*Top , Horizontal*/
+        padding: 2px 3px;
+        border: solid grey;
+        border-radius: 8px;
+        font-size:15px ;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: beige;
+    }
+    .container{
+        border: 2px solid green;
+        margin: 145px 900px ;
+        padding: 5px 2px;
+        width: 31%;
+        border-radius: 25px;
+    }
+    .form-group input{
+        opacity: 50%;
+text-align: center;
+display: block;
+width: 350px;
+padding: 9px;
+border: 2px solid rgb(168, 159, 159);
+margin: 2px auto;
+font-size: 15px;
+border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        opacity: 50%;
+        display: block;
+        width: 371px;
+        margin: auto;
+       
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+           <img src="Img/logo4.jpg" alt="">
+           <div>Asmin Gym House</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home </a></li>
+            <li><a href="#">About Us </a></li>
+            <li><a href="#">Gym Calculator </a></li>
+            <li><a href="#">Contact US </a></li>
+        </ul>
+        </div>
+        <!-- RIght box for buttons -->
+        <div class="right">
+           <button class="btn">Call Us Now </button>
+           <button class="btn">Email Us Now</button>
+        </div>
+    </header>
+    <div class="container">
+      <h1>Enroll The Best Gym Of Nepal</h1>
+      <!-- Stores data in backend -->
+      <form action="noaction.php"> 
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Name">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Age">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Address">
+      </div>
+      <!-- For form submission -->
+      <button class="btn">Submit Now</button>
+    </form> 
+    </div>
+
+</body>
+</html>
